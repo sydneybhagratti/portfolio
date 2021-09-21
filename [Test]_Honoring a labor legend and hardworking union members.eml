@@ -1,0 +1,1328 @@
+Delivered-To: sbhagratti21@gmail.com
+Received: by 2002:a05:6838:cc52:0:0:0:0 with SMTP id xo18csp2060461nkb;
+        Mon, 20 Sep 2021 14:22:36 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJwa0s5OEV8tPtw52H2N8Vc8qww0UJzpBMyCZra0MmpPNnxNmYGBBbiv1V9YYn6MAP2JEukm
+X-Received: by 2002:a37:d97:: with SMTP id 145mr19439750qkn.212.1632172956272;
+        Mon, 20 Sep 2021 14:22:36 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1632172956; cv=none;
+        d=google.com; s=arc-20160816;
+        b=q47MLE/czJkpxVPAogVDnxHQBR8i5AkcZhYw7Y/SnOH2oQ0r5WPpEJskzUJHy8egkK
+         wEnDsePalnDf/rroqhM9WQSk3zLU9gktbz1T0av/Fp5uH3fJ85jM+dTnH+FSs09Wvtb/
+         M5SIp4Cew5JJnmBwSF8Tpi9D0uBLXj6X78PnHVD8Xfgssq6gE0UbjgafIT3VftAGoXSE
+         XuCxHXr6pVZolnoryj0xo1y4zeh+bOVnTkLog7d7zyHhTMrkBj6FxVJS3IQFaI96rDGZ
+         /2bX60HKA5AN4jlLeJbWRGitisPi7wR/c53H6mX8QAlbVus+76wnlgba+IoAAR3w1WKH
+         4plA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:list-id:reply-to:mime-version:list-unsubscribe-post
+         :list-unsubscribe:date:subject:to:from:dkim-signature;
+        bh=XspzK2sp7VCE6KIEwvFX2xKlFZMi4D6JiWNtfcJLnmM=;
+        b=L9Ena3OpNzFG80cudlJhu66ux55CWVE8RDyyBD2SVIoIDUJV0JB97Zm2HcrW/eoU8d
+         cPEliGBZi8IRAn+4Z3RHiUX/tHv0s9UqVhGRkbEIGsQK5aPPl01jgnL4vSw0SeURRpfM
+         PQKQAxijLEjR41WU95bQUH94O4v7g4cPdqA6DBUy3tj/0psh2Qppco0At719+vrJ/x7T
+         SzVTxdy28gsa5MImcUA3UmP071qQFZQSL3YU6MC0+DKyKshzdNvP9zyZkyH6c447mP24
+         zYAwCDNVUedRRG2/0WQNBX2KjRMyY6Ri8noDA3n9VOmohQGo2+qeGkddHX11d7kcOwDg
+         8/zA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@email-unionplus.org header.s=200608 header.b="h28R/GvW";
+       spf=pass (google.com: domain of bounce-435_html-44120483-5271256-7206793-1@bounce.email-unionplus.org designates 136.147.136.71 as permitted sender) smtp.mailfrom=bounce-435_HTML-44120483-5271256-7206793-1@bounce.email-unionplus.org
+Return-Path: <bounce-435_HTML-44120483-5271256-7206793-1@bounce.email-unionplus.org>
+Received: from mta.email-unionplus.org (mta.email-unionplus.org. [136.147.136.71])
+        by mx.google.com with ESMTPS id x22si10088642qtm.25.2021.09.20.14.22.35
+        for <sbhagratti21@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 20 Sep 2021 14:22:36 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce-435_html-44120483-5271256-7206793-1@bounce.email-unionplus.org designates 136.147.136.71 as permitted sender) client-ip=136.147.136.71;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@email-unionplus.org header.s=200608 header.b="h28R/GvW";
+       spf=pass (google.com: domain of bounce-435_html-44120483-5271256-7206793-1@bounce.email-unionplus.org designates 136.147.136.71 as permitted sender) smtp.mailfrom=bounce-435_HTML-44120483-5271256-7206793-1@bounce.email-unionplus.org
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=200608; d=email-unionplus.org;
+ h=From:To:Subject:Date:List-Unsubscribe:List-Unsubscribe-Post:MIME-Version:
+ Reply-To:List-ID:X-CSA-Complaints:Message-ID:Content-Type;
+ i=email@email-unionplus.org;
+ bh=XspzK2sp7VCE6KIEwvFX2xKlFZMi4D6JiWNtfcJLnmM=;
+ b=h28R/GvWrLu5uLCttVDdxj0DAwys6d4HyYVzhamTdmzuvI5zGi33+DPIOLp4VLRxezwGFelt3Zkr
+   CZPocrN91alWjPQoF5pRS3VZIHGvhXlOVREnCvoGXY7697fO2HNu1fm3Ue6cAbv1fEKylmEHmLdg
+   9AbOaGPj3scFcUncV1c=
+Received: by mta.email-unionplus.org id h93tpo2fmd4l for <sbhagratti21@gmail.com>; Mon, 20 Sep 2021 21:22:34 +0000 (envelope-from <bounce-435_HTML-44120483-5271256-7206793-1@bounce.email-unionplus.org>)
+From: "Union Plus" <email@email-unionplus.org>
+To: <sbhagratti@unionplus.org>
+Subject: [Test]:Honoring a labor legend and hardworking union members
+Date: Mon, 20 Sep 2021 15:22:34 -0600
+List-Unsubscribe: <http://click.email-unionplus.org/subscription_center.aspx?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtaWQiOiI3MjA2NzkzIiwicyI6IjQ0MTIwNDgzIiwibGlkIjoiNDM1IiwiaiI6IjUyNzEyNTYiLCJqYiI6IjEiLCJkIjoiNzAxNjQifQ.n3iaA1Fa3sz2vai0idHBCLV1fYR2TTjxJaaDJqx9LXw>, <mailto:leave-fd4f1073700b5c392848-fe651074746604797d17-fe9311727265067873-fe8d13727562037476-ffce15@leave.email-unionplus.org>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+x-CSA-Compliance-Source: SFMC
+MIME-Version: 1.0
+Reply-To: "Union Plus" <reply-fe9311727265067873-435_HTML-44120483-7206793-1@email-unionplus.org>
+List-ID: <7206793.xt.local>
+X-CSA-Complaints: csa-complaints@eco.de
+X-SFMC-Stack: 7
+x-job: 7206793_5271256
+Message-ID: <4f56f1eb-9391-4ef2-9b69-498bf5f068e0@atl1s07mta2933.xt.local>
+Content-Type: multipart/alternative;
+	boundary="mM4oiGTEMXsH=_?:"
+
+This is a multi-part message in MIME format.
+
+--mM4oiGTEMXsH=_?:
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+Union Plus
+ 
+http://click.email-unionplus.org/?qs=aa35c04c386e50143297db6fc8548497c7c9053f984cd65f573ba02b625b36a5ad3228107d871b7734b75c100f967c9913b18a14ce529e84 
+
+
+ 
+
+ 
+Honoring a labor legend, Richard Trumka
+
+Union Plus joins the AFL-CIO in expressing our heartfelt sorrow and condolences at the passing of President Richard Trumka. He was our leader and friend. He will be greatly missed. 
+http://click.email-unionplus.org/?qs=aa35c04c386e501460d9345e261422d4b34aab2bf2eae0a72a62cbda78552427ea0a594c7cd60310fff6128e24829b66ee98b364f7187cad 
+Read the statement  from Union Plus President, Mitch Stevens.
+
+
+ 
+
+ 
+http://click.email-unionplus.org/?qs=0dca58bca62ea63025d9511a48cad07976fefeb0ed639b0bae5238d027e71b9849b19a7a7944e51ebbcb632660a3ec78248f0a28229479c7 
+
+August Union Plus Digital Toolkit
+
+http://click.email-unionplus.org/?qs=0dca58bca62ea63025d9511a48cad07976fefeb0ed639b0bae5238d027e71b9849b19a7a7944e51ebbcb632660a3ec78248f0a28229479c7 
+
+
+Important resources for your members
+
+The August Digital Toolkit includes resources for you to share with your members, including Union Plus Hardship Help Benefits and real discounts and savings they need as we all continue to navigate this difficult time.
+
+
+These valuable resources are here for you to share on your union&rsquo;s website, via email and/or on your social media.
+
+http://click.email-unionplus.org/?qs=0dca58bca62ea63025d9511a48cad07976fefeb0ed639b0bae5238d027e71b9849b19a7a7944e51ebbcb632660a3ec78248f0a28229479c7 
+Get the August Digital Toolkit 
+
+
+http://click.email-unionplus.org/?qs=0dca58bca62ea630ef9fc0c24233066b3fd795a426268200bca5988a27d62b992dec22934ecf26f1194fc37119f4d5822a05263736edabbf 
+
+Unions Power America Contest
+
+http://click.email-unionplus.org/?qs=0dca58bca62ea630ef9fc0c24233066b3fd795a426268200bca5988a27d62b992dec22934ecf26f1194fc37119f4d5822a05263736edabbf 
+
+
+Enter for a chance to win $15,000!
+
+To honor the hard work and efforts of your union members this Labor Day, Union Plus is awarding $130,000 in cash prizes, including a $15,000 Grand Prize, in the 
+http://click.email-unionplus.org/?qs=0dca58bca62ea630ef9fc0c24233066b3fd795a426268200bca5988a27d62b992dec22934ecf26f1194fc37119f4d5822a05263736edabbf 
+Unions Power America Contest .
+
+
+Share what you&rsquo;re doing to help America come back stronger and you could win big.
+Contest ends August 22!
+
+http://click.email-unionplus.org/?qs=0dca58bca62ea630ef9fc0c24233066b3fd795a426268200bca5988a27d62b992dec22934ecf26f1194fc37119f4d5822a05263736edabbf 
+Enter now 
+
+
+NO PURCHASE NECESSARY. Open to U.S. residents; 18+; current or retired union members in good standing with a union internationally affiliated with the AFL-CIO. The Contest is not open to the general public. Ends 8/22/21. Void where prohibited. For Official Rules & complete eligibility details visit 
+http://click.email-unionplus.org/?qs=0dca58bca62ea630ef9fc0c24233066b3fd795a426268200bca5988a27d62b992dec22934ecf26f1194fc37119f4d5822a05263736edabbf 
+www.unionplus.org/laborday . Sponsor: Union Privilege.
+
+
+
+http://click.email-unionplus.org/?qs=0dca58bca62ea630bb18777048df29ae5e016ea0ffcffe8fe92dbaf096ae31ebf8154a42a8505127ea9f56fce21443a5f8eddf9de8ffec1d 
+
+
+
+
+
+http://click.email-unionplus.org/?qs=0dca58bca62ea630eb17d1c04c4f9771e42be163b06aa14d83635d34926699014b92f2d18cf2f4df34f555f2112ab45aee371b09e26dba9a 
+
+Union Plus Hardship Help
+
+http://click.email-unionplus.org/?qs=0dca58bca62ea630eb17d1c04c4f9771e42be163b06aa14d83635d34926699014b92f2d18cf2f4df34f555f2112ab45aee371b09e26dba9a 
+
+
+We're here when you need us
+
+Participants in our Union Plus Mortgage, Credit Card, Personal Loan or supplemental insurance programs may be eligible for additional hardship assistance through our Mortgage Assistance Program or other Union Plus hardship assistance programs.
+
+http://click.email-unionplus.org/?qs=0dca58bca62ea630eb17d1c04c4f9771e42be163b06aa14d83635d34926699014b92f2d18cf2f4df34f555f2112ab45aee371b09e26dba9a 
+Learn more 
+
+
+ 
+Get $50 a month off your internet bill
+
+http://click.email-unionplus.org/?qs=aa35c04c386e501467f5218c8e419b5469deefe86263eca400335f836e21f46561c77c391d04a548323f873fe144ae546fa8ce4603449b84 
+
+
+The Emergency Broadband Benefit is a new government program to help families struggling to afford internet during the pandemic.
+
+
+The benefit provides a discount of up to $50/mo towards broadband service for eligible households ($75/mo for households on qualifying Tribal lands.), in addition to a one-time discount of up to $100 to purchase a laptop, desktop computer, or tablet from participating providers.
+
+http://click.email-unionplus.org/?qs=aa35c04c386e501467f5218c8e419b5469deefe86263eca400335f836e21f46561c77c391d04a548323f873fe144ae546fa8ce4603449b84 
+Learn more 
+
+
+http://click.email-unionplus.org/?qs=0dca58bca62ea6307746f77aade1991f4b5c927d0899d970fdc60de0c1d6abd108add41d51357afdde106010e94149f43593139ddf6b3a50 
+
+ COVID-19 info and guidance from the CDC
+
+
+ The latest COVID-19 info from the CDC
+
+ There's a lot of information &mdash; and misinformation &mdash; out there about COVID-19. Get the real deal on vaccines, variants and even how to travel safer this summer, straight from the scientists and experts at the CDC. Stay healthy with science, not fiction.
+
+http://click.email-unionplus.org/?qs=0dca58bca62ea6305f54fd32b7a58882309e8922f7e5878e84e09bc032e8ee033bc575c239481b3d101f41d0f5f9a3adb53c8d6d164b13a3 
+
+
+ Get the facts about COVID-19 variants.
+
+http://click.email-unionplus.org/?qs=0dca58bca62ea6305f54fd32b7a58882309e8922f7e5878e84e09bc032e8ee033bc575c239481b3d101f41d0f5f9a3adb53c8d6d164b13a3 
+ABOUT COVID-19 VARIANTS 
+
+http://click.email-unionplus.org/?qs=0dca58bca62ea630e501eb25ea029c0ec78324aa86fb143c9dc066f7257ba8858ce703a716d7044688f70102bf40c68ca6999217bf5c5618 
+
+
+ Find COVID-19 vaccines near you.
+
+http://click.email-unionplus.org/?qs=0dca58bca62ea630e501eb25ea029c0ec78324aa86fb143c9dc066f7257ba8858ce703a716d7044688f70102bf40c68ca6999217bf5c5618 
+FIND A VACCINATION LOCATION 
+
+http://click.email-unionplus.org/?qs=0dca58bca62ea630c3877f66bd86ae37a1d4b10e018859571c156cb04eab6f00d18f833fb72d0eb8c15c5ba2f07e5e4b95a207c57aabc649 
+
+
+ New guidance for people who are fully vaccinated.
+
+http://click.email-unionplus.org/?qs=0dca58bca62ea630c3877f66bd86ae37a1d4b10e018859571c156cb04eab6f00d18f833fb72d0eb8c15c5ba2f07e5e4b95a207c57aabc649 
+GUIDANCE IF YOU'RE VACCINATED 
+
+http://click.email-unionplus.org/?qs=0dca58bca62ea6307746f77aade1991f4b5c927d0899d970fdc60de0c1d6abd108add41d51357afdde106010e94149f43593139ddf6b3a50 
+Get the latest facts about COVID-19 from the CDC 
+
+
+AFL-CIO Coronavirus Resource Page
+
+The AFL-CIO has compiled a 
+http://click.email-unionplus.org/?qs=aa35c04c386e501475df747a15a53ccce456db1414ea5562369f7a7e7d398839aa0ae62cb99fb4e3f9abc7072dc59ebe44954818a6315a07 
+Coronavirus (COVID-19) pandemic resource page  with valuable information and updates.
+
+
+In addition, please check out 
+http://click.email-unionplus.org/?qs=aa35c04c386e5014825e3a134fa6e16bca85a90fb68f67d8a97ae9e04f3a3016d853127438067d009df3b4a8c08c9b1aeccb3852bf9525e3 
+your union's website  your union's website as they may have additional information and resources.
+
+http://click.email-unionplus.org/?qs=aa35c04c386e501475df747a15a53ccce456db1414ea5562369f7a7e7d398839aa0ae62cb99fb4e3f9abc7072dc59ebe44954818a6315a07 
+Visit AFL-CIO resource page 
+
+
+ 
+
+ 
+ Benefits that fit your life
+
+http://click.email-unionplus.org/?qs=aa35c04c386e501421ca6ee1e2139962279351551e068d1574b2e39a2ab74c491bf9490e4130bb923d6a9a1640bb7753de90a1682fab3512 
+
+http://click.email-unionplus.org/?qs=aa35c04c386e501421ca6ee1e2139962279351551e068d1574b2e39a2ab74c491bf9490e4130bb923d6a9a1640bb7753de90a1682fab3512 
+Money 
+
+http://click.email-unionplus.org/?qs=aa35c04c386e5014cf9258ee4deadf4ed4100c1257a1a130eb0f00fd96070562746254c0429d0d6f516f2a4b1cc37956e55cc0a8ff055bb7 
+
+http://click.email-unionplus.org/?qs=aa35c04c386e5014cf9258ee4deadf4ed4100c1257a1a130eb0f00fd96070562746254c0429d0d6f516f2a4b1cc37956e55cc0a8ff055bb7 
+Home & Auto 
+
+http://click.email-unionplus.org/?qs=aa35c04c386e5014213f0be8a9bd1b5f7ec561c714623a2726640cbaf8f16f84b0310fd27f97ad0142ee3f48d4b27d77e0ae265119a80ba2 
+
+http://click.email-unionplus.org/?qs=aa35c04c386e5014213f0be8a9bd1b5f7ec561c714623a2726640cbaf8f16f84b0310fd27f97ad0142ee3f48d4b27d77e0ae265119a80ba2 
+Shopping & Discounts 
+
+http://click.email-unionplus.org/?qs=aa35c04c386e5014588b10cea63f76c20fd00a3a731b27e8b898ba45ee29970b496ba052f41145cb33e0850a64db97fe2f53eb99b8db453d 
+
+http://click.email-unionplus.org/?qs=aa35c04c386e5014588b10cea63f76c20fd00a3a731b27e8b898ba45ee29970b496ba052f41145cb33e0850a64db97fe2f53eb99b8db453d 
+Insurance  
+
+http://click.email-unionplus.org/?qs=aa35c04c386e50146241cc86a574fe612d042c7f1cd634ebc9695acca78bea6cfda0e78269c471310b94b89e2f20150121b83001804047ee 
+
+http://click.email-unionplus.org/?qs=aa35c04c386e50146241cc86a574fe612d042c7f1cd634ebc9695acca78bea6cfda0e78269c471310b94b89e2f20150121b83001804047ee 
+Health 
+ 
+
+http://click.email-unionplus.org/?qs=aa35c04c386e50147ea8919421c6037e5b116023ee910918bbc96152476f7ab2781ee8403b8201a745f969cd141e8e8abc85dc9790910c96 
+
+http://click.email-unionplus.org/?qs=aa35c04c386e50147ea8919421c6037e5b116023ee910918bbc96152476f7ab2781ee8403b8201a745f969cd141e8e8abc85dc9790910c96 
+Education 
+
+http://click.email-unionplus.org/?qs=aa35c04c386e501425d72a2e1c737fca9d51d7c06327869564302849eb0213978a0895d4f7c69f6416a3898ef836ff2ba4c2ad8063e5ac21 
+
+http://click.email-unionplus.org/?qs=aa35c04c386e501425d72a2e1c737fca9d51d7c06327869564302849eb0213978a0895d4f7c69f6416a3898ef836ff2ba4c2ad8063e5ac21 
+Travel 
+
+http://click.email-unionplus.org/?qs=aa35c04c386e5014e89cab86ea8eb2e795d8bfa9f3123971f2877acdb6ea6d735f6cee80a950d5e26bf82fefc0af5b4cc8226db3b07de5ca 
+
+http://click.email-unionplus.org/?qs=aa35c04c386e5014e89cab86ea8eb2e795d8bfa9f3123971f2877acdb6ea6d735f6cee80a950d5e26bf82fefc0af5b4cc8226db3b07de5ca 
+Hardship Help 
+
+
+http://click.email-unionplus.org/?qs=aa35c04c386e50146f39f1cd88911c6e66c991de03217f27b63c226adaf41fde6f8df273f08cf1b76afd2ac05c20e53c9fc8c49bbe57e7b7 
+
+http://click.email-unionplus.org/?qs=aa35c04c386e5014380e02f6b5b3afab311d7c12b217c352d1040eaf865fa658c0521abd7a558c470b6315e525bc68083ab6388616e572eb 
+
+http://click.email-unionplus.org/?qs=aa35c04c386e501415c7de54b5430f78ead8230c91d30e7f28cbf5b7da0024a6caa4827e17ed26131fa9078599aa2b76b735e32006bef540 
+
+http://click.email-unionplus.org/?qs=aa35c04c386e5014dd04101251dc4fee2699cdde1f375f5444c4bfe9c80409af7e1f2892690aca10e07c893a860b76cda9916b77a36154a5 
+
+
+ 
+
+ Union Plus
+
+1100 First St NE #850 | Washington, DC 20002 US 
+
+http://click.email-unionplus.org/?qs=aa35c04c386e50145b6228042ff24aeae1c0f136122ea462f94b0a8587a09e51b938a18994b65d682615d908b50fea0cfa5ab08066915718 
+Please unsubscribe me from this Union Plus communication. 
+
+http://click.email-unionplus.org/profile_center.aspx?qs=e5c56c2930ef7ca2235ab96d25872ea53145b14c9e1787ed10cc7e7e1cbd825098ca4bffe7df9c8ed89a1189425634421afce9a3a0dd34a30a38970a74d7c5d8 
+Update Profile  | 
+http://click.email-unionplus.org/unsub_center.aspx?qs=e5c56c2930ef7ca2afcc5ab93fd3b2ac1ddecab246f9d23f5c68bbdf824076e2d58307af14abd32b2733c13ee4fe42095a55446a9ca601ac6a80a95f62870a7e626248bd8e267cb0 
+One-Click Unsubscribe 
+
+
+ We respect your right to privacy - 
+http://click.email-unionplus.org/?qs=aa35c04c386e50143da6817af13aa3fd5ceeafaa6b5f5097317763d56b5961137b9d074420ca5b3d0d75535ad4d959ac451024684243dbaa 
+view our policy 
+
+
+ This email was sent to:
+mrk3kids@yahoo.com 
+
+
+ 
+
+ 
+
+http://click.email-unionplus.org/?qs=aa35c04c386e5014af33c2a104609a741de984b11d3f7599cfcfe1f1a6fb8f6f20152750fe75d65a2c6fd93a9c4b42683f0c2491c2483067 
+
+Moving Discounts
+
+
+Save on your move, your way!
+
+Whether you need to move a few things or a whole house, Union Plus can help you save on the right-sized transportation for your moving needs.
+
+http://click.email-unionplus.org/?qs=aa35c04c386e5014baa6aeb5409202a51e8e7933d512abc7173e80941ef23de246f4dfd25abc9397e8c05d9a9ca1a26058ec846390186dc3 
+
+
+Save up to
+
+25% on Hertz Vans*
+
+http://click.email-unionplus.org/?qs=aa35c04c386e5014baa6aeb5409202a51e8e7933d512abc7173e80941ef23de246f4dfd25abc9397e8c05d9a9ca1a26058ec846390186dc3 
+GET THIS OFFER 
+
+http://click.email-unionplus.org/?qs=aa35c04c386e50140c8173e1e2346e8e99fbffdd9c56720063391f1c7dd796e93b028a407d8236712dc92a8361bb2410ec5459a902ec205a 
+
+
+Save 20%
+
+on Budget Trucks*
+
+http://click.email-unionplus.org/?qs=aa35c04c386e50140c8173e1e2346e8e99fbffdd9c56720063391f1c7dd796e93b028a407d8236712dc92a8361bb2410ec5459a902ec205a 
+GET THIS OFFER 
+
+http://click.email-unionplus.org/?qs=aa35c04c386e5014662d6e2c26918362e34ff3054cc457a02e959678993fa4226e2ee3c0dd85fc9237308a6e0c69b916b0614547d0c68499 
+
+
+Save on instate or long-distance moves*
+
+http://click.email-unionplus.org/?qs=aa35c04c386e5014662d6e2c26918362e34ff3054cc457a02e959678993fa4226e2ee3c0dd85fc9237308a6e0c69b916b0614547d0c68499 
+GET THIS OFFER 
+
+http://click.email-unionplus.org/?qs=aa35c04c386e50140424e9cc575452d02c40bc3066ddcf875cd655753a6a4e434e83c9ba2bb64a06bc7b042ebd21681a5dc485a6d020944d 
+Save on your move 
+
+
+*Terms apply.
+
+
+
+
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ This email was sent to: 
+ 
+mrk3kids@yahoo.com 
+
+
+ Union Plus
+
+ 
+1100 First St NE #850
+  
+
+ Washington, DC 20002 US
+
+http://click.email-unionplus.org/subscription_center.aspx?qs=e5c56c2930ef7ca2afcc5ab93fd3b2ac1ddecab246f9d23f5c68bbdf824076e23ae90125ae94e59cbcee32577dda0ede0402d3a66606a0caa0231f11ba28548d 
+Manage Subscriptions  | 
+http://click.email-unionplus.org/profile_center.aspx?qs=e5c56c2930ef7ca2235ab96d25872ea53145b14c9e1787ed10cc7e7e1cbd825098ca4bffe7df9c8ed89a1189425634421afce9a3a0dd34a30a38970a74d7c5d8 
+Update Profile  | 
+http://click.email-unionplus.org/unsub_center.aspx?qs=e5c56c2930ef7ca2afcc5ab93fd3b2ac1ddecab246f9d23f5c68bbdf824076e2d58307af14abd32b2733c13ee4fe42095a55446a9ca601ac6a80a95f62870a7e626248bd8e267cb0 
+Unsubscribe 
+
+
+ (c) 2021 Union Plus
+ 
+
+
+
+--mM4oiGTEMXsH=_?:
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- SUPPORTS OUTLOOK DPI SCALING-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- PREVENTS PAGE ZOOMING -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<!-- ADDS SUPPORT FOR OLD VERSIONS OF INTERNET EXPLORER -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!-- LINK DETECTION -->
+<meta name="format-detection" content="telephone=no"/>
+<!-- APPEARS IN BROWSER TAB -->
+<title>Union Plus</title>
+ 
+<!-- OPTIONAL GOOGLE FONT -->
+ <!--[if !mso]><!-- -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+<!--<![endif]-->
+ 
+<!-- FAVICON  -->
+<link rel="icon" type="image/png" href="http://www.google.com/s2/favicons?domain=https://www.unionplus.org/" />
+ 
+<!-- DARK MODE -->
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark">
+  
+<style>
+ /* DARK MODE */
+ :root {
+  color-scheme: light dark;
+  supported-color-schemes: light dark;
+   }
+ 
+ a {
+        color: #489fad;
+        text-decoration: underline; 
+        font-weight: 700;
+    }
+/* PREVENTS BROWSER TEXT RESIZING */
+*, body, div, p, a, li, table, td, table td {
+ -webkit-text-size-adjust: none !important;
+ -moz-text-size-adjust: none !important;
+ -o-text-size-adjust: none !important;
+ -ms-text-size-adjust: none !important;
+}
+/* GENERAL STYLING */
+body, table, td, table td, img {
+ font-family: Arial, Helvetica, sans-serif; 
+ border: none;
+ margin: 0px;
+ padding: 0px;
+}
+/*ALLOWS TEXT WRAPPING, CONTROLS LINE HEIGHT, AND PREVENTS ADDED BORDERS IN OUTLOOK */
+body, table, td, table td {
+ mso-line-height-rule: exactly; 
+  mso-margin-bottom-alt:0; 
+  mso-margin-top-alt:0; 
+  mso-table-lspace:0pt; 
+  mso-table-rspace:0pt;
+ border-collapse: collapse; 
+} 
+/* OUTLOOK.COM FIXES. OUTLOOK.COM AUTOMATICALLY ADDS A CLASS OF "ExternalClass" TO YOUR BODY TAG, WHICH IS WHY THESE WORK */
+/*RESETS OUTLOOK.COM LINE HEIGHT TO 100% INSTEAD OF ITS DEFAULT OF 131% */
+.ExternalClass * {
+ line-height: 100%;
+ width: 100%; 
+}
+
+@media only screen and (max-width: 599px) {
+/*------------MOBILE HIDE AND SHOW---------------*/
+.mobileHide {
+ display: none !important;
+ height: 0px !important;
+ width: 0px !important;
+ max-height: 0px !important;
+ max-width: 0px !important;
+ font-size: 0px !important;
+ line-height: 0px !important;
+}
+.mobileShow {
+ display: block !important;
+ height: auto !important;
+ width: auto !important;
+ max-height: none !important;
+ max-width: none !important;
+ font-size: 10px !important;
+ line-height: 10px !important;
+}
+/*-------------ALIGNMENT-------------------------*/
+.block {
+ display: block !important; 
+}
+.inlineBlock {
+ display: inline-block !important; 
+}
+.centerBlock {
+ margin: 0px auto !important; 
+ float: none !important;
+}
+.centerText {text-align: center !important;}
+.leftText {text-align: left !important;}
+.rightText {text-align: right !important;}
+
+/*---------HEIGHT----------*/
+.heightAuto {height: auto !important;}
+
+/*---------WIDTH----------*/
+.maxWidth480 {max-width: 480px !important;}
+.widthAuto {width: auto !important;}
+.widthFull {width: 100% !important; min-width: inherit !important; height: auto !important;}
+.width320 {width: 320px !important; min-width: inherit !important;}
+.width318 {width: 318px !important;}
+.width310 {width: 310px !important;}
+.width300 {width: 300px !important;}
+.width298 {width: 298px !important;}
+.width290 {width: 290px !important;}
+.width280 {width: 280px !important;}
+.width278 {width: 278px !important;}
+.width270 {width: 270px !important;}
+.width260 {width: 260px !important;}
+.width250 {width: 250px !important;}
+.width240 {width: 240px !important;}
+.width230 {width: 230px !important;}
+.width220 {width: 220px !important;}
+.width210 {width: 210px !important;}
+.width200 {width: 200px !important;}
+.width190 {width: 190px !important;}
+.width180 {width: 180px !important;}
+.width170 {width: 170px !important;}
+.width160 {width: 160px !important;}
+.width150 {width: 150px !important;}
+.width140 {width: 140px !important;}
+.width130 {width: 130px !important;}
+.width120 {width: 120px !important;}
+.width110 {width: 110px !important;}
+.width100 {width: 100px !important;}
+.width90 {width: 90px !important;}
+.width80 {width: 80px !important;}
+.width70 {width: 70px !important;}
+.width60 {width: 60px !important;}
+.width50 {width: 50px !important;}
+.width40 {width: 40px !important;}
+.width30 {width: 30px !important;}
+.width20 {width: 20px !important;}
+.width10 {width: 10px !important;}
+.width5 {width: 5px !important;}
+
+/*---------PADDING----------*/
+.clearPadding {padding: 0px !important}
+.clearLeftPadding {padding-left: 0px !important;}
+.clearRightPadding {padding-right: 0px !important;}
+.clearTopPadding {padding-top: 0px !important;}
+.clearBottomPadding {padding-bottom: 0px !important;}
+
+.padding50 {padding: 50px !important;}
+.padding40 {padding: 40px !important;}
+.padding30 {padding: 30px !important;}
+.padding20 {padding: 20px !important;}
+.padding19 {padding: 19px !important;}
+.padding15 {padding: 15px !important;}
+.padding10 {padding: 10px !important;}
+.padding9 {padding: 9px !important;}
+.padding5 {padding: 5px !important;}
+
+.paddingLeft100 {padding-left: 100px !important;}
+.paddingLeft90 {padding-left: 90px !important;}
+.paddingLeft80 {padding-left: 80px !important;}
+.paddingLeft70 {padding-left: 70px !important;}
+.paddingLeft60 {padding-left: 60px !important;}
+.paddingLeft50 {padding-left: 50px !important;}
+.paddingLeft40 {padding-left: 40px !important;}
+.paddingLeft30 {padding-left: 30px !important;}
+.paddingLeft20 {padding-left: 20px !important;}
+.paddingLeft10 {padding-left: 10px !important;}
+.paddingLeft5 {padding-left: 5px !important;}
+
+.paddingRight100 {padding-right: 100px !important;}
+.paddingRight90 {padding-right: 90px !important;}
+.paddingRight80 {padding-right: 80px !important;}
+.paddingRight70 {padding-right: 70px !important;}
+.paddingRight60 {padding-right: 60px !important;}
+.paddingRight50 {padding-right: 50px !important;}
+.paddingRight40 {padding-right: 40px !important;}
+.paddingRight30 {padding-right: 30px !important;}
+.paddingRight20 {padding-right: 20px !important;}
+.paddingRight10 {padding-right: 10px !important;}
+.paddingRight5 {padding-right: 5px !important;}
+
+.paddingBottom100 {padding-bottom: 100px !important;}
+.paddingBottom90 {padding-bottom: 90px !important;}
+.paddingBottom80 {padding-bottom: 80px !important;}
+.paddingBottom70 {padding-bottom: 70px !important;}
+.paddingBottom60 {padding-bottom: 60px !important;}
+.paddingBottom50 {padding-bottom: 50px !important;}
+.paddingBottom40 {padding-bottom: 40px !important;}
+.paddingBottom30 {padding-bottom: 30px !important;}
+.paddingBottom20 {padding-bottom: 20px !important;}
+.paddingBottom10 {padding-bottom: 10px !important;}
+.paddingBottom5 {padding-bottom: 5px !important;}
+
+.paddingTop100 {padding-top: 100px !important;}
+.paddingTop90 {padding-top: 90px !important;}
+.paddingTop80 {padding-top: 80px !important;}
+.paddingTop70 {padding-top: 70px !important;}
+.paddingTop60 {padding-top: 60px !important;}
+.paddingTop50 {padding-top: 50px !important;}
+.paddingTop40 {padding-top: 40px !important;}
+.paddingTop30 {padding-top: 30px !important;}
+.paddingTop20 {padding-top: 20px !important;}
+.paddingTop10 {padding-top: 10px !important;}
+.paddingTop5 {padding-top: 5px !important;}
+
+/*---------BORDERS----------*/
+.clearBorders { border: none !important;}
+.clearLeftBorder {border-left: none !important;}
+.clearRightBorder {border-right: none !important;}
+.clearTopBorder {border-top: none !important;}
+.clearBottomBorder {border-bottom: none !important;}
+
+.leftBorder {border-left: 1px solid #666666 !important;}
+.rightBorder {border-right: 1px solid #666666 !important;}
+.topBorder {border-top: 1px solid #666666 !important;}
+.bottomBorder {border-bottom: 1px solid #666666 !important;}
+
+/*---------FONT SIZES----------*/
+.font40 {font-size:40px !important; line-height: 52px !important;}
+.font35 {font-size:35px !important; line-height: 44px !important;}
+.font30 {font-size:30px !important; line-height: 38px !important;}
+.font25 {font-size:25px !important; line-height: 32px !important;}
+.font20 {font-size:20px !important; line-height: 26px !important;}
+.font18 {font-size:18px !important; line-height: 22px !important;}
+.font17 {font-size:17px !important; line-height: 21px !important;}
+.font16 {font-size:16px !important; line-height: 20px !important;}
+.font15 {font-size:15px !important; line-height: 19px !important;}
+.font14 {font-size:14px !important; line-height: 18px !important;}
+.font13 {font-size:13px !important; line-height: 17px !important;}
+.font12 {font-size:12px !important; line-height: 16px !important;}
+.font11 {font-size:11px !important; line-height: 14px !important;}
+.font10 {font-size:10px !important; line-height: 13px !important;}
+
+}
+ 
+/* DARK MODE */
+/* TARGETS OUTLOOK IOS, IOS MAIL, APPLE MAIL, OUTLOOK 2019 MAC, OUTLOOK.COM */
+@media (prefers-color-scheme: dark ) {
+ 
+ /* BACKGROUNDS */
+ .darkModeBackgroundBlack {background: #000000 !important;}
+ .darkModeBackgroundGrey1 {background: #111111 !important;}
+ .darkModeBackgroundGrey2 {background: #222222 !important;}
+ .darkModeBackgroundGrey3 {background: #333333 !important;}
+ 
+ /* TEXT */
+ .darkModeTextWhite {color: #ffffff !important;}
+ .darkModeTextLightGrey {color: #f4f4f4 !important;}
+ 
+ /* HIDE */
+ .darkModeHide {display: none !important;}
+ 
+ }
+ 
+ /* TARGETS OUTLOOK APP FOR ANDROID */
+ /* BACKGROUNDS */
+ [data-ogsc] .darkModeBackgroundBlack {background: #000000 !important;}
+ [data-ogsc] .darkModeBackgroundGrey1 {background: #111111 !important;}
+ [data-ogsc] .darkModeBackgroundGrey2 {background: #222222 !important;}
+ [data-ogsc] .darkModeBackgroundGrey3 {background: #333333 !important;}
+ 
+ /* TEXT */
+ [data-ogsc] .darkModeTextWhite {color: #ffffff !important;}
+ [data-ogsc] .darkModeTextLightGrey {color: #f4f4f4 !important;}
+ 
+ 
+ /* HIDE */
+ .darkModeHide {display: none !important;}
+ 
+</style>
+ 
+<!-- FOR OUTLOOK DPI SCALING -->
+<!--[if gte mso 9]> <xml>     <o:OfficeDocumentSettings>     <o:AllowPNG/>     <o:PixelsPerInch>96</o:PixelsPerInch>     </o:OfficeDocumentSettings> </xml> <![endif]-->
+ 
+<!-- BACKUP FONTS FOR OUTLOOK -->
+<!--[if mso]>    <style type="text/css">       body, table, td {font-family: Arial, Helvetica, sans-serif !important; v-text-align:left;}    </style> <![endif]-->
+ 
+</head>
+
+<body style="margin: 0px; padding: 0px;"><style type="text/css">
+div.preheader 
+{ display: none !important; } 
+</style>
+<div class="preheader" style="font-size: 1px; display: none !important;">We bow our heads at the passing of AFL-CIO President, Richard Trumka</div>
+
+<!-- 100% WIDTH WRAPPER BACKGROUND TABLE -->
+<table class="darkModeBackgroundBlack" style="background: #ffffff;" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="darkModeBackgroundBlack"  align="center" style="background: #ffffff;">
+<!-- FIXED WIDTH, CENTERED WRAPPER TABLE -->
+<table class="widthFull"  style="table-layout: fixed; min-width: 600px; width: 600px;" width="600" align="center" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="clearPadding" align="left" style="padding: 20px 0px;">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+   
+        <!-- BODY MODULE 1 -->
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+	
+		<tr>
+			<td align="center" class="darkModeBackgroundBlack" style="padding: 40px 30px; background: #ffffff;">
+				<a  href="http://click.email-unionplus.org/?qs=0dca58bca62ea6307ac6536fcb404436f84a21aed8a25a7d7927bc9648584b51983c669d292ded6569a6d97faa8072af3e6188d1132f02ae" target="_blank"><img alt="Union Plus" border="0" height="72" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/5/5df3efb2-1a99-42ef-b944-e53531c775b8.png" style="width: 210px; height: 72px;" width="210"></a></td></tr></table></td></tr></table>
+            </td>
+        </tr>
+      
+      <!-- BODY MODULE 2 -->
+   <tr>
+    <td>
+     <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+	
+		<tr>
+			<td align="center" class="darkModeBackgroundBlack" style="padding: 0px 30px 0px 30px; background: #ffffff;">
+				<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+					<!-- HEADLINE -->
+						<tr>
+							<td class="darkModeTextWhite clearLeftPadding clearRightPadding font35" style="padding: 0px 70px 30px 70px; text-align: center; font-family:  'Montserrat', Arial, Helvetica, sans-serif; font-size: 40px; line-height: 44px; font-weight: 700; color: #14375a;">
+								Honoring a labor legend, Richard Trumka</td></tr><!-- TEXT --><tr>
+							<td class="darkModeTextWhite clearLeftPadding clearRightPadding" style="padding: 0px 70px 0px 70px; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: 24px; font-weight: 400; color: #565151;">
+								Union Plus joins the AFL-CIO in expressing our heartfelt sorrow and condolences at the passing of President Richard Trumka. He was our leader and friend. He will be greatly missed.&nbsp;<a  class="darkModeTextWhite"  data-linkto="https://" href="http://click.email-unionplus.org/?qs=0dca58bca62ea6308e1fccee925bf9fcce1e21c937971d464d4bd540f2bab7d9a5a48c1fb9a76518e0929bf6de977cb73c43bc7fa4639c4a" style="color:#489fad;text-decoration:underline; font-weight: 700;" target="_blank" title="">Read the statement</a> from Union Plus President, Mitch Stevens.</td></tr></table></td></tr></table></td></tr></table>
+    </td>
+   </tr>
+      
+      <!-- BODY MODULE 3 -->
+   <tr>
+    <td>
+     <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+	
+		<tr>
+			<td class="paddingLeft30 paddingRight30 darkModeBackgroundBlack" style="padding: 40px 100px; background: #ffffff; border-bottom: 5px solid #397e89;">
+				<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+					<!-- SECTION HEADING -->
+						<tr>
+							<td align="center" style="padding: 0px 0px 20px 0px;">
+								<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin: 0px auto;">
+									
+										<tr>
+											<td style="vertical-align: middle;" valign="middle">
+												<a   data-linkto="https://unionplus.deals/digitaltoolkit?utm_source=leaderupdate&amp;utm_medium=email&amp;utm_campaign=08-10-21" href="http://click.email-unionplus.org/?qs=0dca58bca62ea63011141c2776ad8960104b165a500b9e0e69caacf18de4d2ebdeb53962676695988c9ddd5dee1bad3fc842eec3d8946d62" title="Digital Toolkit"><img alt="Digital Toolkit" data-assetid="830595" height="39" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/6/8ae72dae-611d-40ed-8071-c3eeba3855f2.png" style="width: 39px; height: 39px; padding: 0px;" width="39"></a></td><td class="darkModeTextWhite" style="vertical-align: middle; padding: 0px 0px 0px 10px; text-align: left; font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px; font-weight: 900; color: #065685;" valign="middle">
+												August Union Plus Digital Toolkit</td></tr></table></td></tr><!-- IMAGE --><tr>
+							<td align="center" style="padding: 0px 0px 30px 0px;">
+								<a   data-linkto="https://" href="http://click.email-unionplus.org/?qs=0dca58bca62ea63025d9511a48cad07976fefeb0ed639b0bae5238d027e71b9849b19a7a7944e51ebbcb632660a3ec78248f0a28229479c7" target="_blank" title="Enter now"><img alt="Digital Toolkit" data-assetid="913045" height="400" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/6/632f5684-78c3-401b-b388-bbd0e9cbc7f8.png" style="width: 400px; height: 400px; padding: 0px; text-align: center;" width="400"></a></td></tr><!-- HEADLINE --><tr>
+							<td class="darkModeTextWhite" style="padding: 0px 0px 30px 0px; text-align: center; font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 32px; line-height: 36px; font-weight: 700; color: #14375a;">
+								Important resources for your members</td></tr><!-- TEXT --><tr>
+							<td class="darkModeTextWhite" style="padding: 0px 0px 30px 0px; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: 24px; font-weight: 400; color: #565151;">
+								The August Digital Toolkit includes resources for you to share with your members, including Union Plus Hardship Help Benefits and real discounts and savings they need as we all continue to navigate this difficult time.<br>
+								<br>
+								These valuable resources are here for you to share on your union&rsquo;s website, via email and/or on your social media.</td></tr><!-- CTA --><tr>
+							<td align="center">
+								<table align="center" border="0" cellpadding="0" cellspacing="0" class="widthFull" style="margin: 0px auto;">
+									
+										<tr>
+											<td height="60" style="background: #dd3134; font-family: 'ff-real-headline-pro', 'Helvetica Neue', 'Montserrat',  Arial, sans-serif; text-align: center; font-size: 18px; line-height: 20px; font-weight: 700; height: 60px; border-radius: 60px;">
+												<a   data-linkto="https://" href="http://click.email-unionplus.org/?qs=0dca58bca62ea63011141c2776ad8960104b165a500b9e0e69caacf18de4d2ebdeb53962676695988c9ddd5dee1bad3fc842eec3d8946d62" style="color:#ffffff;text-decoration:none; padding: 20px 25px; border: 1px solid #dd3134; display: block; border-radius: 60px;" target="_blank" title="Digital Toolkit">Get the August Digital Toolkit</a></td></tr></table></td></tr><!-- TEXT --></table></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+	
+		<tr>
+			<td class="paddingLeft30 paddingRight30 darkModeBackgroundBlack" style="padding: 40px 100px; background: #ffffff; border-bottom: 5px solid #397e89;">
+				<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+					<!-- SECTION HEADING -->
+						<tr>
+							<td align="center" style="padding: 0px 0px 20px 0px;">
+								<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin: 0px auto;">
+									
+										<tr>
+											<td style="vertical-align: middle;" valign="middle">
+												<a   data-linkto="https://" href="http://click.email-unionplus.org/?qs=0dca58bca62ea630f4a1ebeb736be73511ff34b859b5834daa23a06a1fee758ff8d2d1d81f0c76dd61851df12d5eb26ece2a899d37e2838e" target="_blank" title=""><img alt="Unions Power America Contest" data-assetid="864770" height="37" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/6/1851e26e-8287-4496-94d1-03a681b8dbba.png" style="width: 37px; height: 37px; padding: 0px; text-align: center;" width="37"></a></td><td class="darkModeTextWhite" style="vertical-align: middle; padding: 0px 0px 0px 10px; text-align: left; font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px; font-weight: 900; color: #065685;" valign="middle">
+												Unions Power America Contest</td></tr></table></td></tr><!-- IMAGE --><tr>
+							<td style="padding: 0px 0px 30px 0px;">
+								<a   data-linkto="https://" href="http://click.email-unionplus.org/?qs=0dca58bca62ea630ef9fc0c24233066b3fd795a426268200bca5988a27d62b992dec22934ecf26f1194fc37119f4d5822a05263736edabbf" title="Enter the Unions Power America Contest today!"><img alt="Enter the Unions Power America Contest" data-assetid="909944" height="400" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/6/5dc0a8a6-442c-476b-b302-5da45bd4a921.png" style="width: 400px; height: 400px; padding: 0px; text-align: center;" width="400"></a></td></tr><!-- HEADLINE --><tr>
+							<td class="darkModeTextWhite" style="padding: 0px 0px 30px 0px; text-align: center; font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 32px; line-height: 36px; font-weight: 700; color: #14375a;">
+								Enter for a chance to win $15,000!</td></tr><!-- TEXT --><tr>
+							<td class="darkModeTextWhite" style="padding: 0px 0px 30px 0px; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: 24px; font-weight: 400; color: #565151;">
+								To honor the hard work and efforts of your union members this Labor Day, Union Plus is awarding $130,000 in cash prizes, including a $15,000 Grand Prize, in the <b><a  class="darkModeTextWhite"  data-linkto="https://" href="http://click.email-unionplus.org/?qs=0dca58bca62ea630f4a1ebeb736be73511ff34b859b5834daa23a06a1fee758ff8d2d1d81f0c76dd61851df12d5eb26ece2a899d37e2838e" style="color:#489fad;text-decoration:underline; font-weight: 700;" target="_blank" title="Unions Power America Contest">Unions Power America Contest</a></b>.<br>
+								<br>
+								Share what you&rsquo;re doing to help America come back stronger and you could win big.<div style="text-align: center;">
+									<br>
+									<b>Contest ends August 22!</b></div></td></tr><!-- CTA --><tr>
+							<td align="center">
+								<table align="center" border="0" cellpadding="0" cellspacing="0" class="widthFull" style="margin: 0px auto;">
+									
+										<tr>
+											<td height="60" style="background: #dd3134; font-family: 'ff-real-headline-pro', 'Helvetica Neue', 'Montserrat',  Arial, sans-serif; text-align: center; font-size: 18px; line-height: 20px; font-weight: 700; height: 60px; border-radius: 60px;">
+												<a   data-linkto="https://" href="http://click.email-unionplus.org/?qs=0dca58bca62ea630641f648569c6a36f4ca31b515498ff7865a0dad7700778b153264c569d9ee470f8394329bdef6ecc55535c85e3e5b762" style="color:#ffffff;text-decoration:none; padding: 20px 25px; border: 1px solid #dd3134; display: block; border-radius: 60px;" target="_blank" title="Don't miss the Summer of Savings Sweepstakes">Enter now</a></td></tr></table></td></tr><!-- TEXT --><tr>
+							<td class="darkModeTextWhite" style="padding: 30px 0px 0px 0px; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 10px; line-height: 14px; font-weight: 400; color: #565151;">
+								NO PURCHASE NECESSARY. Open to U.S. residents; 18+; current or retired union members in good standing with a union internationally affiliated with the AFL-CIO. The Contest is not open to the general public. Ends 8/22/21. Void where prohibited. For Official Rules &amp; complete eligibility details visit <a  class="darkModeTextWhite" href="http://click.email-unionplus.org/?qs=0dca58bca62ea630f1ebc5a616908804b6c43c8d7e02c741889c2ebbc1add7f90dbc3f486e83e2154415e21508ca68d99530bdb4cf41a3f2" style="color: #489fad; text-decoration: underline; font-weight: 700;" target="_blank">www.unionplus.org/laborday</a>. Sponsor: Union Privilege.</td></tr></table></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table width="100%" cellspacing="0" cellpadding="0" role="presentation"><tr><td align="center"><a href="http://click.email-unionplus.org/?qs=0dca58bca62ea630bb18777048df29ae5e016ea0ffcffe8fe92dbaf096ae31ebf8154a42a8505127ea9f56fce21443a5f8eddf9de8ffec1d" title=""   data-linkto="https://"><img data-assetid="913034" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/6/f20a0f83-39d3-48d7-b807-18b4938f3457.png" alt="" width="600" style="display: block; padding: 0px; text-align: center; height: auto; width: 100%; border: 0px;"></a></td></tr></table></td></tr></table>
+
+</td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+	
+		<tr>
+			<td class="paddingLeft30 paddingRight30 darkModeBackgroundBlack" style="padding: 40px 100px; background: #ffffff; border-bottom: 5px solid #397e89;">
+				<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+					<!-- SECTION HEADING -->
+						<tr>
+							<td align="center" style="padding: 0px 0px 20px 0px;">
+								<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin: 0px auto;">
+									
+										<tr>
+											<td style="vertical-align: middle;" valign="middle">
+												<a   data-linkto="other" href="http://click.email-unionplus.org/?qs=0dca58bca62ea630bf4943c8596ef675583ec2ecf83984adbce02dd0028caf66737e60521937270daff5dcb69c831fe5699efe29096dd13f" title="Digital Toolkit"><img alt="Hardship Help" data-assetid="830587" height="39" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/6/6b9a206e-2ab8-4039-a53e-ea455cd5512b.png" style="width: 39px; height: 39px; padding: 0px; text-align: center;" width="39"></a></td><td class="darkModeTextWhite" style="vertical-align: middle; padding: 0px 0px 0px 10px; text-align: left; font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px; font-weight: 900; color: #065685;" valign="middle">
+												Union Plus Hardship Help</td></tr></table></td></tr><!-- IMAGE --><tr>
+							<td align="center" style="padding: 0px 0px 30px 0px;">
+								<a   data-linkto="other" href="http://click.email-unionplus.org/?qs=0dca58bca62ea630eb17d1c04c4f9771e42be163b06aa14d83635d34926699014b92f2d18cf2f4df34f555f2112ab45aee371b09e26dba9a" target="_blank" title="Learn more"><img alt="Hardship Help" data-assetid="913046" height="400" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/6/1d77adce-5fb9-49cb-bf0c-ba8843e366eb.png" style="width: 400px; height: 400px; padding: 0px; text-align: center;" width="400"></a></td></tr><!-- HEADLINE --><tr>
+							<td class="darkModeTextWhite" style="padding: 0px 0px 30px 0px; text-align: center; font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 32px; line-height: 36px; font-weight: 700; color: #14375a;">
+								We're here when you need us</td></tr><!-- TEXT --><tr>
+							<td class="darkModeTextWhite" style="padding: 0px 0px 30px 0px; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: 24px; font-weight: 400; color: #565151;">
+								Participants in our Union Plus Mortgage, Credit Card, Personal Loan or supplemental insurance programs may be eligible for additional hardship assistance through our Mortgage Assistance Program or other Union Plus hardship assistance programs.</td></tr><!-- CTA --><tr>
+							<td align="center">
+								<table align="center" border="0" cellpadding="0" cellspacing="0" class="widthFull" style="margin: 0px auto;">
+									
+										<tr>
+											<td height="60" style="background: #dd3134; font-family: 'ff-real-headline-pro', 'Helvetica Neue', 'Montserrat',  Arial, sans-serif; text-align: center; font-size: 18px; line-height: 20px; font-weight: 700; height: 60px; border-radius: 60px;">
+												<a   data-linkto="https://www.unionplus.org/benefits/hardship-help?utm_source=leaderupdate&amp;utm_medium=email&amp;utm_campaign=08-10-21" href="http://click.email-unionplus.org/?qs=0dca58bca62ea6309d3d8f93d3c7bdf70a51055522a8d316b01d37b39e251c919284fe7259a2273778ece67358536a99fd00155673c5175e" style="color:#ffffff;text-decoration:none; padding: 20px 25px; border: 1px solid #dd3134; display: block; border-radius: 60px;" target="_blank" title="Digital Toolkit">Learn more</a></td></tr></table></td></tr><!-- TEXT --></table></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+	
+		<tr>
+			<td class="paddingLeft30 paddingRight30 darkModeBackgroundBlack" style="padding: 40px 30px; background: #ffffff; border-bottom: 5px solid #397e89;">
+				&nbsp;<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+					<!-- HEADLINE -->
+						<tr>
+							<td class="darkModeTextWhite clearLeftPadding clearRightPadding" style="padding: 0px 70px 30px 70px; text-align: center; font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 32px; line-height: 36px; font-weight: 700; color: #14375a;">
+								Get $50 a month off your internet bill</td></tr><tr>
+							<td>
+								<table align="left" border="0" cellpadding="0" cellspacing="0" class="widthFull" role="presentation" style="width: 270px;" valign="top" width="270">
+									
+										<tr>
+											<td class="paddingBottom30">
+												<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+													<!-- IMAGE -->
+														<tr>
+															<td>
+																<a   data-linkto="https://" href="http://click.email-unionplus.org/?qs=0dca58bca62ea630f96e246ddf9724dbfa6446ab56e48adf1ef400150e16189235c8606d157e6b70e6f07ac92ac011a9960032d2eec528f0" target="_blank" title="Emergency Broadband Benefit"><img alt="Save $50 on your internet bill with the Emergency Broadband Benefit" data-assetid="913070" height="270" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/6/e643c01b-0dbd-4a98-a592-fb8e186c37df.png" style="width: 270px; height: 270px; padding: 0px; text-align: center;" width="270"></a></td></tr></table></td></tr></table><table align="right" border="0" cellpadding="0" cellspacing="0" class="widthFull" role="presentation" style="width: 240px;" valign="top" width="240">
+									
+										<tr>
+											<td>
+												<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+													
+														<tr>
+															<td class="darkModeTextWhite" style="padding: 0px 0px 10px 0px; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 18px; font-weight: 400; color: #565151;">
+																The Emergency Broadband Benefit is a new government program to help families struggling to afford internet during the pandemic.<br>
+																<br>
+																The benefit provides a discount of up to $50/mo towards broadband service for eligible households ($75/mo for households on qualifying Tribal lands.), in addition to a one-time discount of up to $100 to purchase a laptop, desktop computer, or tablet from participating providers.</td></tr><!-- CTA --><tr>
+															<td align="left">
+																<table align="left" border="0" cellpadding="0" cellspacing="0" class="widthFull">
+																	
+																		<tr>
+																			<td height="40" style="background: #dd3134; font-family: 'ff-real-headline-pro', 'Helvetica Neue', 'Montserrat',  Arial, sans-serif; text-align: center; font-size: 14px; line-height: 20px; font-weight: 700; height: 40px; border-radius: 40px;">
+																				<a   data-linkto="https://" href="http://click.email-unionplus.org/?qs=0dca58bca62ea630684970940de657617436f58ee8aa151236a07c166c94ef441bdb1c40ebaa170f46365abe9e39d25610daf401d011d015" style="color:#ffffff;text-decoration:none; padding: 10px 25px; border: 1px solid #dd3134; display: block; border-radius: 60px;" target="_blank" title="The Emergency Broadband Benefit">Learn more</a></td></tr></table></td></tr></table></td></tr></table></td></tr><!-- TEXT --></table></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+ 
+  <tr>
+   <td class="paddingLeft30 paddingRight30 darkModeBackgroundGrey1" style="padding: 40px 30px; background: #ffffff; border-bottom: 5px solid #397e89;">
+    <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+     <!-- SECTION HEADING -->
+      <tr>
+       <td align="center" style="padding: 0px 0px 20px 0px;">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin: 0px auto;">
+         
+          <tr>
+           <td style="vertical-align: middle;" valign="middle">
+            <a   data-linkto="https://" href="http://click.email-unionplus.org/?qs=0dca58bca62ea6307746f77aade1991f4b5c927d0899d970fdc60de0c1d6abd108add41d51357afdde106010e94149f43593139ddf6b3a50" title="CDC Coronavirus Information"><img alt="CDC's COVID-19 Vaccine information page" data-assetid="830606" height="39" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/6/39925e6e-513b-4efe-a3d6-a2f241bdcae9.png" style="width: 39px; height: 39px; padding: 0px; text-align: center;" width="39"></a></td><td class="darkModeTextWhite" style="vertical-align: middle; padding: 0px 0px 0px 10px; text-align: left; font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px; font-weight: 900; color: #065685;" valign="middle">
+            COVID-19 info and guidance from the CDC</td></tr></table></td></tr><!-- HEADLINE --><tr>
+       <td class="darkModeTextWhite clearLeftPadding clearRightPadding" style="padding: 0px 70px 30px 70px; text-align: center; font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 32px; line-height: 36px; font-weight: 700; color: #14375a;">
+        The latest COVID-19 info from the CDC</td></tr><!-- TEXT --><tr>
+       <td class="darkModeTextWhite clearLeftPadding clearRightPadding" style="padding: 0px 70px 30px 70px; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: 24px; font-weight: 400; color: #565151;">
+        There's a lot of information &mdash; and misinformation &mdash; out there about COVID-19. Get the real deal on vaccines, variants and even how to travel safer this summer, straight from the scientists and experts at the CDC. Stay healthy with science, not fiction.</td></tr><!-- 3 COL --><tr>
+       <td style="padding: 0px 0px 30px 0px;">
+        <!--[if mso]>                                                     <table width="100%" border="0" cellspacing="0" cellpadding="0">                                                     <tr>                                                     <td valign="top">                                                 <![endif]--><!-- COL --><table align="left" border="0" cellpadding="0" cellspacing="0" class="centerBlock block width160" role="presentation" style="width: 190px;" valign="top" width="190">
+         
+          <tr>
+           <td class="paddingBottom30" style="padding: 0px 30px 0px 0px;">
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+             <!-- IMAGE -->
+              <tr>
+               <td class="darkModeBackgroundBlack" style="border-top: 5px solid #78cdd1; background: #ffffff;">
+                <a   data-linkto="https://" href="http://click.email-unionplus.org/?qs=0dca58bca62ea6305f54fd32b7a58882309e8922f7e5878e84e09bc032e8ee033bc575c239481b3d101f41d0f5f9a3adb53c8d6d164b13a3" target="_blank" title="Coronavirus facts vs myths"><img alt="Coronavirus vaccine facts vs myths" data-assetid="913041" height="114" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/6/74fe9328-b598-4447-a5ba-d29bbdf4ecbf.png" style="display: block; width: 160px; height: 114px; padding: 0px; text-align: center;" width="160"></a></td></tr><!-- TEXT --><tr>
+               <td class="darkModeBackgroundBlack" style=" background: #ffffff; padding: 15px;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                 <!-- TEXT -->
+                  <tr>
+                   <td class="darkModeTextWhite" style="padding: 0px 0px 15px 0px; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px; font-weight: 400; color: #565151;">
+                    Get the facts about COVID-19 variants.</td></tr><!-- CTA --><tr>
+                   <td class="darkModeTextWhite" style=" text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px; font-weight: 700; color: #397e89;">
+                    <a  class="darkModeTextWhite"  data-linkto="https://" href="http://click.email-unionplus.org/?qs=0dca58bca62ea6305f54fd32b7a58882309e8922f7e5878e84e09bc032e8ee033bc575c239481b3d101f41d0f5f9a3adb53c8d6d164b13a3" style="color:#397e89;text-decoration:none;" target="_blank" title="Get facts about the COVID-19 vaccine">ABOUT COVID-19 VARIANTS</a></td></tr></table></td></tr></table></td></tr></table><!--[if mso]>                                                     </td>                                                     <td valign="top">                                                 <![endif]--><!-- COL --><table align="left" border="0" cellpadding="0" cellspacing="0" class="centerBlock block width160" role="presentation" style="width: 190px;" valign="top" width="190">
+         
+          <tr>
+           <td class="paddingBottom30" style="padding: 0px 30px 0px 0px;">
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+             <!-- IMAGE -->
+              <tr>
+               <td class="darkModeBackgroundBlack" style="border-top: 5px solid #78cdd1; background: #ffffff;">
+                <a   data-linkto="https://" href="http://click.email-unionplus.org/?qs=0dca58bca62ea630e501eb25ea029c0ec78324aa86fb143c9dc066f7257ba8858ce703a716d7044688f70102bf40c68ca6999217bf5c5618" target="_blank" title="Find a COVID-19 Vaccine"><img alt="Find COVID-19 vaccines near you" data-assetid="913042" height="114" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/6/6f8db471-2b43-4511-9014-c49321f68876.png" style="display: block; width: 160px; height: 114px; padding: 0px; text-align: center;" width="160"></a></td></tr><!-- TEXT --><tr>
+               <td class="darkModeBackgroundBlack" style=" background: #ffffff; padding: 15px;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                 <!-- TEXT -->
+                  <tr>
+                   <td class="darkModeTextWhite" style="padding: 0px 0px 15px 0px; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px; font-weight: 400; color: #565151;">
+                    Find COVID-19 vaccines near you.</td></tr><!-- CTA --><tr>
+                   <td class="darkModeTextWhite" style=" text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px; font-weight: 700; color: #397e89;">
+                    <a  class="darkModeTextWhite"  data-linkto="https://" href="http://click.email-unionplus.org/?qs=0dca58bca62ea63015337bfc600e0a6c4b1afd7943ca61e27354ff1e3b83646d7c6a0eb4680df4b8941def6cf668ead48845a3a194e28880" style="color:#397e89;text-decoration:none;" target="_blank" title="COVID-19 Vaccine finder">FIND A VACCINATION LOCATION</a></td></tr></table></td></tr></table></td></tr></table><!--[if mso]>                                                     </td>                                                     <td valign="top">                                                 <![endif]--><!-- COL --><table align="left" border="0" cellpadding="0" cellspacing="0" class="centerBlock block" role="presentation" style="width: 160px;" valign="top" width="160">
+         
+          <tr>
+           <td>
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+             <!-- IMAGE -->
+              <tr>
+               <td class="darkModeBackgroundBlack" style="border-top: 5px solid #78cdd1; background: #ffffff;">
+                <a   data-linkto="https://" href="http://click.email-unionplus.org/?qs=0dca58bca62ea630c3877f66bd86ae37a1d4b10e018859571c156cb04eab6f00d18f833fb72d0eb8c15c5ba2f07e5e4b95a207c57aabc649" target="_blank" title="What will change when you're full vaccinated"><img alt="What will change when you're fully vaccinated" data-assetid="913043" height="114" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/6/6151de9d-e191-444f-b75c-8c64003fb1a1.png" style="display: block; width: 160px; height: 114px; padding: 0px; text-align: center;" width="160"></a></td></tr><!-- TEXT --><tr>
+               <td class="darkModeBackgroundBlack" style=" background: #ffffff; padding: 15px;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                 <!-- TEXT -->
+                  <tr>
+                   <td class="darkModeTextWhite" style="padding: 0px 0px 15px 0px; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px; font-weight: 400; color: #565151;">
+                    New guidance for people who are fully vaccinated.</td></tr><!-- CTA --><tr>
+                   <td class="darkModeTextWhite" style=" text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px; font-weight: 700; color: #397e89;">
+                    <a  class="darkModeTextWhite"  data-linkto="https://" href="http://click.email-unionplus.org/?qs=0dca58bca62ea63020ec7e78898b294e4894886d31aec40ba9a85aa07e8a9894157e1c364d9ae20ff040a90d5596f9c338e11cdc5d2229c0" style="color:#397e89;text-decoration:none;" target="_blank" title="What will change when you're full vaccinated">GUIDANCE IF YOU'RE VACCINATED</a></td></tr></table></td></tr></table></td></tr></table><!--[if mso]>                                                     </td>                                                     </tr>                                                     </table>                                                 <![endif]--></td></tr><!-- CTA --><tr>
+       <td align="center">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" class="widthFull" style="margin: 0px auto;">
+         
+          <tr>
+           <td height="60" style="background: #dd3134; font-family: 'ff-real-headline-pro', 'Helvetica Neue', 'Montserrat',  Arial, sans-serif; text-align: center; font-size: 18px; line-height: 20px; font-weight: 700; height: 60px; border-radius: 60px;">
+            <a   data-linkto="https://" href="http://click.email-unionplus.org/?qs=0dca58bca62ea6306305a79641b20238670d1258c45765dc8622aa2140e841b92182cbf0fd8f2a10fdc7c9563a4331afc65ee5f269fa1c9a" style="color:#ffffff;text-decoration:none; padding: 20px 25px; border: 1px solid #dd3134; display: block; border-radius: 60px;" target="_blank" title="Get the latest on COVID-19 vaccines from the CDC">Get the latest facts about COVID-19 from the CDC</a></td></tr></table></td></tr></table></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+	
+		<tr>
+			<td class="paddingLeft30 paddingRight30 darkModeBackgroundBlack" style="padding: 40px 100px; background: #ffffff; border-bottom: 5px solid #397e89;">
+				<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+					<!-- SECTION HEADING --><!-- IMAGE --><!-- HEADLINE -->
+						<tr>
+							<td class="darkModeTextWhite" style="padding: 0px 0px 30px 0px; text-align: center; font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 32px; line-height: 36px; font-weight: 700; color: #14375a;">
+								AFL-CIO Coronavirus Resource Page</td></tr><!-- TEXT --><tr>
+							<td class="darkModeTextWhite" style="padding: 0px 0px 30px 0px; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: 24px; font-weight: 400; color: #565151;">
+								The AFL-CIO has compiled a&nbsp;<a  class="darkModeTextWhite"  data-linkto="https://aflcio.org/covid-19?utm_source=leaderupdate&amp;utm_medium=email&amp;utm_campaign=08-10-21" href="http://click.email-unionplus.org/?qs=0dca58bca62ea63059c3a70848a77afd94eee14ca62c8f9be111d16d658c75c232c2ff4d8282edfb7c461541082915e96c4babfff337732e" style="color:#489fad;text-decoration:underline; font-weight: 700;" target="_blank" title="Coronavirus">Coronavirus (COVID-19) pandemic resource page</a>&nbsp;with valuable information and updates.<br>
+								<br>
+								In addition, please check out <a  class="darkModeTextWhite"  data-linkto="https://aflcio.org/about/our-unions-and-allies/our-affiliated-unions?utm_source=leaderupdate&amp;utm_medium=email&amp;utm_campaign=07-02-21" href="http://click.email-unionplus.org/?qs=0dca58bca62ea630615b516b4579ffcab6e9dc0cf62475feee3b94434d8acef3322c9b4ddee4b3bb1f7421f04d3aebe8c2fe70df245d541d" style="color:#489fad;text-decoration:underline; font-weight: 700;" target="_blank" title="Cornavirus">your union's website</a> your union's website as they may have additional information and resources.</td></tr><!-- CTA --><tr>
+							<td align="center">
+								<table align="center" border="0" cellpadding="0" cellspacing="0" class="widthFull" style="margin: 0px auto;">
+									
+										<tr>
+											<td height="60" style="background: #dd3134; font-family: 'ff-real-headline-pro', 'Helvetica Neue', 'Montserrat',  Arial, sans-serif; text-align: center; font-size: 18px; line-height: 20px; font-weight: 700; height: 60px; border-radius: 60px;">
+												<a   data-linkto="https://aflcio.org/covid-19?utm_source=leaderupdate&amp;utm_medium=email&amp;utm_campaign=08-10-21" href="http://click.email-unionplus.org/?qs=0dca58bca62ea630388f83f8981905c34d98125402a96552a906500a2ef6d4825bbef4047c5da4cd012cdfd33eceac642362d13852ee705c" style="color:#ffffff;text-decoration:none; padding: 20px 25px; border: 1px solid #dd3134; display: block; border-radius: 60px;" target="_blank" title="Digital Toolkit">Visit AFL-CIO resource page</a></td></tr></table></td></tr><!-- TEXT --></table></td></tr></table></td></tr></table>
+    </td>
+   </tr>
+      
+      <!-- BODY MODULE 4 -->
+   <tr>
+    <td>
+     <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+ <!-- HEADLINE -->
+  <tr>
+   <td class="darkModeTextWhite clearLeftPadding clearRightPadding" style="padding: 30px; text-align: center; font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 20px; line-height: 24px; font-weight: 900; color: #14375a;">
+    Benefits that fit your life</td></tr><!-- ICONS ROW 1 --><tr>
+   <td style="border-bottom: 4px solid #79ccd0;">
+    <!--[if mso]>                                     <table width="100%" border="0" cellspacing="0" cellpadding="0" dir="ltr">                                     <tr>                                     <td valign="top" dir="ltr">                                 <![endif]--><!-- LEFT COL --><table align="left" border="0" cellpadding="0" cellspacing="0" class="widthFull" role="presentation" style="width: 300px;" width="300">
+     
+      <tr>
+       <!-- MONEY --><td class="darkModeBackgroundGrey1" style="padding: 25px; background: #f7f7f7;" valign="top" width="50%">
+        <table border="0" cellpadding="0" cellspacing="0" role="presentation" valign="top" width="100%">
+         <!-- ICON -->
+          <tr>
+           <td align="center" style="padding: 0px 0px 10px 0px;">
+            <a   data-linkto="https://" href="http://click.email-unionplus.org/?qs=0dca58bca62ea6306a50f6d257f304c09350645ecdfffe4f30a276687f6099f627f5ddfcca8e506c0a4ea90406c2e8131bdfebc108c42647" target="_blank" title=""><img alt="Union Plus Money Benefits" data-assetid="830620" height="64" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/6/1f492204-60bf-4147-88d5-645f4494e41f.png" style="width: 64px; height: 64px; padding: 0px;" width="64"></a></td></tr><!-- TEXT --><tr>
+           <td class="darkModeTextWhite" style="vertical-align: middle; text-align: center; font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px; font-weight: 900; color: #14375a;" valign="middle">
+            <a  class="darkModeTextWhite" href="http://click.email-unionplus.org/?qs=0dca58bca62ea6306a50f6d257f304c09350645ecdfffe4f30a276687f6099f627f5ddfcca8e506c0a4ea90406c2e8131bdfebc108c42647" style="color: #14375a; text-decoration: none;" target="_blank">Money</a></td></tr></table></td><!-- HOME & AUTO --><td style="padding: 25px;" valign="top" width="50%">
+        <table border="0" cellpadding="0" cellspacing="0" role="presentation" valign="top" width="100%">
+         <!-- ICON -->
+          <tr>
+           <td align="center" style="padding: 0px 0px 10px 0px;">
+            <a   data-linkto="https://" href="http://click.email-unionplus.org/?qs=0dca58bca62ea630567ab8be9230602fa194615b051bcc8a6821858d4d805bb1c4ab49b759cbb3c7d1ef33a2ae84f32fb49d32a6b4484ba9" target="_blank" title=""><img alt="Union Plus Home &amp; Auto Benefits" data-assetid="830618" height="64" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/6/fe3eb5b9-49fa-4ced-8528-ad86b9fe0a4a.png" style="width: 64px; height: 64px; padding: 0px; text-align: center;" width="64"></a></td></tr><!-- TEXT --><tr>
+           <td class="darkModeTextWhite" style="vertical-align: middle; text-align: center; font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px; font-weight: 900; color: #14375a;" valign="middle">
+            <a  class="darkModeTextWhite" href="http://click.email-unionplus.org/?qs=0dca58bca62ea630567ab8be9230602fa194615b051bcc8a6821858d4d805bb1c4ab49b759cbb3c7d1ef33a2ae84f32fb49d32a6b4484ba9" style="color: #14375a; text-decoration: none;" target="_blank">Home &amp; Auto</a></td></tr></table></td></tr></table><!--[if mso]>                                     </td>                                     <td valign="top" dir="ltr">                                 <![endif]--><!-- RIGHT COL --><table align="right" border="0" cellpadding="0" cellspacing="0" class="widthFull" role="presentation" style="width: 300px;" width="300">
+     
+      <tr>
+       <!-- SHOPPING AND DISCOUNTS --><td class="darkModeBackgroundGrey1" style="padding: 25px; background: #f7f7f7;" valign="top" width="50%">
+        <table border="0" cellpadding="0" cellspacing="0" role="presentation" valign="top" width="100%">
+         <!-- ICON -->
+          <tr>
+           <td align="center" style="padding: 0px 0px 10px 0px;">
+            <a   data-linkto="https://" href="http://click.email-unionplus.org/?qs=0dca58bca62ea6306df032136e9b0819c762f025209604a19f08ee88aaaf752b83798565b2979645b4ae3882eeb856c63dfd3660748a031d" target="_blank" title=""><img alt="Union Plus Shopping &amp; Discounts Benefits" data-assetid="830617" height="64" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/6/18cf5d32-93d6-41a5-bb3f-546c1bc4a88d.png" style="width: 64px; height: 64px; padding: 0px; text-align: center;" width="64"></a></td></tr><!-- TEXT --><tr>
+           <td class="darkModeTextWhite" style="vertical-align: middle; text-align: center; font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px; font-weight: 900; color: #14375a;" valign="middle">
+            <a  class="darkModeTextWhite" href="http://click.email-unionplus.org/?qs=0dca58bca62ea6306df032136e9b0819c762f025209604a19f08ee88aaaf752b83798565b2979645b4ae3882eeb856c63dfd3660748a031d" style="color: #14375a; text-decoration: none;" target="_blank">Shopping &amp; Discounts</a></td></tr></table></td><!-- INSURANCE --><td style="padding: 25px;" valign="top" width="50%">
+        <table border="0" cellpadding="0" cellspacing="0" role="presentation" valign="top" width="100%">
+         <!-- ICON -->
+          <tr>
+           <td align="center" style="padding: 0px 0px 10px 0px;">
+            <a   data-linkto="https://" href="http://click.email-unionplus.org/?qs=aa35c04c386e50143865eec292b9aaf96241c8f3a32c3923c4d8a2d22ebc2963a3cc80553eba231442e54b3dd017d2d85b177168ed2a7ac9" target="_blank" title=""><img alt="Union Plus Insurance Benefits" data-assetid="830619" height="64" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/6/527ce05f-7bdc-40ca-bc06-461c7b3fa7cb.png" style="width: 64px; height: 64px; padding: 0px; text-align: center;" width="64"></a></td></tr><!-- TEXT --><tr>
+           <td class="darkModeTextWhite" style="vertical-align: middle; text-align: center; font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px; font-weight: 900; color: #14375a;" valign="middle">
+            <a  class="darkModeTextWhite" href="http://click.email-unionplus.org/?qs=aa35c04c386e50143865eec292b9aaf96241c8f3a32c3923c4d8a2d22ebc2963a3cc80553eba231442e54b3dd017d2d85b177168ed2a7ac9" style="color: #14375a; text-decoration: none;" target="_blank">Insurance </a></td></tr></table></td></tr></table><!--[if mso]>                                     </td>                                     </tr>                                     </table>                                 <![endif]--></td></tr><!-- ICONS ROW 2 --><tr>
+   <td>
+    <!--[if mso]>                                     <table width="100%" border="0" cellspacing="0" cellpadding="0" dir="ltr">                                     <tr>                                     <td valign="top" dir="ltr">                                 <![endif]--><!-- LEFT COL --><table align="left" border="0" cellpadding="0" cellspacing="0" class="widthFull" role="presentation" style="width: 300px;" width="300">
+     
+      <tr>
+       <!-- HEALTH --><td style="padding: 25px; " valign="top" width="50%">
+        <table border="0" cellpadding="0" cellspacing="0" role="presentation" valign="top" width="100%">
+         <!-- ICON -->
+          <tr>
+           <td align="center" style="padding: 0px 0px 10px 0px;">
+            <a   data-linkto="https://" href="http://click.email-unionplus.org/?qs=aa35c04c386e5014b1ec497556e1340bc4eb6770bca78fca3698f302ce80a3cf9918065cae2ad36b3b8496e91111a1fab5cedc90ff7121c2" target="_blank" title=""><img alt="Union Plus Health Benefits" data-assetid="830621" height="64" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/6/fb8e88ef-74cb-4019-b590-64c9dc7bd3b9.png" style="width: 64px; height: 64px; padding: 0px; text-align: center;" width="64"></a></td></tr><!-- TEXT --><tr>
+           <td class="darkModeTextWhite" style="vertical-align: middle; text-align: center; font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px; font-weight: 900; color: #14375a;" valign="middle">
+            <a  class="darkModeTextWhite" href="http://click.email-unionplus.org/?qs=aa35c04c386e5014b1ec497556e1340bc4eb6770bca78fca3698f302ce80a3cf9918065cae2ad36b3b8496e91111a1fab5cedc90ff7121c2" style="color: #14375a; text-decoration: none;" target="_blank">Health<br class="mobileHide">
+            <span class="mobileHide">&nbsp;</span></a></td></tr></table></td><!-- EDUCATION --><td class="darkModeBackgroundGrey1" style="background: #f7f7f7; padding: 25px;" valign="top" width="50%">
+        <table border="0" cellpadding="0" cellspacing="0" role="presentation" valign="top" width="100%">
+         <!-- ICON -->
+          <tr>
+           <td align="center" style="padding: 0px 0px 10px 0px;">
+            <a   data-linkto="https://" href="http://click.email-unionplus.org/?qs=aa35c04c386e5014946f59fa5216be9476323aa78307618edb015541d45455615a745867a44b0c32922264d7d9d8fe36c076a0985d7b967b" target="_blank" title=""><img alt="Union Plus Education Benefits" data-assetid="830623" height="64" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/6/24bc8b32-a1e0-485e-923f-51ab6e4acb4a.png" style="width: 64px; height: 64px; padding: 0px; text-align: center;" width="64"></a></td></tr><!-- TEXT --><tr>
+           <td class="darkModeTextWhite" style="vertical-align: middle; text-align: center; font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px; font-weight: 900; color: #14375a;" valign="middle">
+            <a  class="darkModeTextWhite" href="http://click.email-unionplus.org/?qs=aa35c04c386e5014946f59fa5216be9476323aa78307618edb015541d45455615a745867a44b0c32922264d7d9d8fe36c076a0985d7b967b" style="color: #14375a; text-decoration: none;" target="_blank">Education</a></td></tr></table></td></tr></table><!--[if mso]>                                     </td>                                     <td valign="top" dir="ltr">                                 <![endif]--><!-- RIGHT COL --><table align="right" border="0" cellpadding="0" cellspacing="0" class="widthFull" role="presentation" style="width: 300px;" width="300">
+     
+      <tr>
+       <!-- TRAVEL --><td style="padding: 25px; " valign="top" width="50%">
+        <table border="0" cellpadding="0" cellspacing="0" role="presentation" valign="top" width="100%">
+         <!-- ICON -->
+          <tr>
+           <td align="center" style="padding: 0px 0px 10px 0px;">
+            <a   data-linkto="https://" href="http://click.email-unionplus.org/?qs=aa35c04c386e50146d109d34a8870a3f1eb44e6cb24f4042150e6d5df02206fcdab0061d224434342c690192908809ca0829e16b93191818" target="_blank" title=""><img alt="Union Plus Travel Benefits" data-assetid="830612" height="64" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/6/b90b8c38-a431-4d8f-8593-ea4f8d755d03.png" style="width: 64px; height: 64px; padding: 0px; text-align: center;" width="64"></a></td></tr><!-- TEXT --><tr>
+           <td class="darkModeTextWhite" style="vertical-align: middle; text-align: center; font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px; font-weight: 900; color: #14375a;" valign="middle">
+            <a  class="darkModeTextWhite" href="http://click.email-unionplus.org/?qs=aa35c04c386e50146d109d34a8870a3f1eb44e6cb24f4042150e6d5df02206fcdab0061d224434342c690192908809ca0829e16b93191818" style="color: #14375a; text-decoration: none;" target="_blank">Travel</a></td></tr></table></td><!-- HARDSHIP --><td class="darkModeBackgroundGrey1" style="background: #f7f7f7;padding: 25px;" valign="top" width="50%">
+        <table border="0" cellpadding="0" cellspacing="0" role="presentation" valign="top" width="100%">
+         <!-- ICON -->
+          <tr>
+           <td align="center" style="padding: 0px 0px 10px 0px;">
+            <a   data-linkto="https://" href="http://click.email-unionplus.org/?qs=aa35c04c386e501433b78144536ed7fcf4f07df4df145f568bf2d9cf90dccf55f6cb45b38d7bbfec8367ffd8c180affc4af750fe2375b1d8" target="_blank" title=""><img alt="Union Plus Hardship Help Benefits" data-assetid="830606" height="64" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/6/39925e6e-513b-4efe-a3d6-a2f241bdcae9.png" style="width: 64px; height: 64px; padding: 0px; text-align: center;" width="64"></a></td></tr><!-- TEXT --><tr>
+           <td class="darkModeTextWhite" style="vertical-align: middle; text-align: center; font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px; font-weight: 900; color: #14375a;" valign="middle">
+            <a  class="darkModeTextWhite" href="http://click.email-unionplus.org/?qs=aa35c04c386e501433b78144536ed7fcf4f07df4df145f568bf2d9cf90dccf55f6cb45b38d7bbfec8367ffd8c180affc4af750fe2375b1d8" style="color: #14375a; text-decoration: none;" target="_blank">Hardship Help</a></td></tr></table></td></tr></table><!--[if mso]>                                     </td>                                     </tr>                                     </table>                                 <![endif]--></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+	
+		<tr>
+			<td style="padding: 40px 30px; background: #14375a;">
+				<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+					<!-- LOGO -->
+						<tr>
+							<td align="center" style="padding: 0px 0px 40px 0px;">
+								<a  href="http://click.email-unionplus.org/?qs=aa35c04c386e5014a06d418f9fe650f14e8e4f99d75d90cf497c66672715184bc1e91b9d6314c86c5315edff94ba16ee81f3ab499a776f97" target="_blank"><img alt="Union Plus" border="0" height="42" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/5/f423265c-683e-4605-9277-e28c13581ebf.png" style="width: 120px; height: 42px;" width="120"></a></td></tr><!-- SOCIAL --><tr>
+							<td align="center">
+								<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin: 0px auto;">
+									
+										<tr>
+											<td class="paddingRight30" style="padding: 0px 60px 0px 0px;">
+												<a  href="http://click.email-unionplus.org/?qs=aa35c04c386e5014c76019b9a243fd45ddaa342df85564702bdf795af430ca22ce19a958b4bceca11704e39c74a048cf84fba17df59f8f83" target="_blank"><img alt="Facebook" border="0" height="45" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/5/34a1e666-0b4b-42d4-bd0d-4b0a3acdd59e.png" style="width: 45px; height: 45px; display:block;" width="45"></a></td><td class="paddingRight30" style="padding: 0px 60px 0px 0px;">
+												<a  href="http://click.email-unionplus.org/?qs=aa35c04c386e501449b83293eb2ebb665094c16229f30b41f6aab4dc87313c5706c5afa15cdf6d89d67c93148809fde96f9df9d808b0cb19" target="_blank"><img alt="Instagram" border="0" height="45" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/5/e6b2b55e-9013-47da-8fbd-1faaeed62003.png" style="width: 45px; height: 45px; display:block;" width="45"></a></td><td>
+												<a  href="http://click.email-unionplus.org/?qs=aa35c04c386e5014d348b80f75f23d2ee65a3803d9c2d97dc5550f03f3493f0053ed640111d4193329778ee005218e35e196cca87e384dac" target="_blank"><img alt="YouTube" border="0" height="45" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/5/f72e58e2-c118-4b00-80b5-c426319a3cc1.png" style="width: 45px; height: 45px; display:block;" width="45"></a></td></tr></table></td></tr></table></td></tr></table></td></tr></table>
+    </td>
+   </tr>
+      
+      <!-- BODY MODULE 5 -->
+   <tr>
+    <td>
+     <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+ 
+  <tr>
+   <td style="padding: 40px 30px; background: #065685;">
+    <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+     <!-- NAME / ADDRESS -->
+      <tr>
+       <td style="border-bottom: 1px solid #ffffff; padding: 0px 0px 30px 0px; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 18px; font-weight: 400; color: #ffffff;">
+        <strong>Union Plus</strong><br>
+        <br>
+        <a href="#" style="color: #ffffff; text-decoration: none; cursor: default;">1100 First St NE #850 | Washington, DC 20002 US</a></td></tr><!-- CANSPAM --><tr>
+       <td style="padding: 30px 0px 0px 0px; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 18px; font-weight: 400; color: #ffffff;">
+        <a  href="http://click.email-unionplus.org/?qs=aa35c04c386e5014cb1b2506a506ab48bc8c5a7e3f9cb69bbe4916475b99d1d312746dd93096b5dab9df607c54d6ff39505f2b819ba370cb" style="color: #ffffff; text-decoration: underline;">Please unsubscribe me from this Union Plus communication.</a><br>
+        <br>
+        <a  href="http://click.email-unionplus.org/profile_center.aspx?qs=e5c56c2930ef7ca2235ab96d25872ea53145b14c9e1787ed10cc7e7e1cbd825098ca4bffe7df9c8ed89a118942563442e643483bd52fe1cb11482823c9d7dae7" style="color: #ffffff; text-decoration: underline;">Update Profile</a> | <a  href="http://click.email-unionplus.org/unsub_center.aspx?qs=e5c56c2930ef7ca2afcc5ab93fd3b2ac1ddecab246f9d23f5c68bbdf824076e2d58307af14abd32b2733c13ee4fe4209d99352ee17ef89190163bb33d8846678e694c967c564ee90" style="color: #ffffff; text-decoration: underline;">One-Click Unsubscribe</a><br>
+        <br>
+        We respect your right to privacy - <a  href="http://click.email-unionplus.org/?qs=aa35c04c386e5014b3d4de07a3f3ccf982f2039a911087f4ec7d61381b30180021a6d10425713a556035320eebf370e6226bc03074b9e359" style="color: #ffffff; text-decoration: underline;">view our policy</a><br>
+        <br>
+        This email was sent to:<br>
+        <a href="#" style="color: #ffffff; text-decoration: underline;">mrk3kids@yahoo.com</a></td></tr></table></td></tr></table></td></tr></table>
+    </td>
+   </tr>
+      
+      <!-- BODY MODULE 6 -->
+   <tr>
+    <td>
+     <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+	
+		<tr>
+			<td class="paddingLeft30 paddingRight30 darkModeBackgroundGrey1" style="padding: 40px 30px; background: #f7f7f7; border-bottom: 5px solid #397e89;">
+				<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+					<!-- SECTION HEADING -->
+						<tr>
+							<td align="center" style="padding: 0px 0px 20px 0px;">
+								<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin: 0px auto;">
+									
+										<tr>
+											<td style="vertical-align: middle;" valign="middle">
+												<a   data-linkto="https://" href="http://click.email-unionplus.org/?qs=aa35c04c386e5014000b7fd5664b5beebf0f01ecdc8bf079e43884c0bbd5df89453068cb4cc092a41699e87e612ed5cb3d7715e3c23f276b" title="Home and auto"><img alt="Moving Discounts" data-assetid="830618" height="39" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/6/fe3eb5b9-49fa-4ced-8528-ad86b9fe0a4a.png" style="width: 39px; height: 39px; padding: 0px;" width="39"></a></td><td class="darkModeTextWhite" style="vertical-align: middle; padding: 0px 0px 0px 10px; text-align: left; font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px; font-weight: 900; color: #065685;" valign="middle">
+												Moving Discounts</td></tr></table></td></tr><!-- HEADLINE --><tr>
+							<td class="darkModeTextWhite clearLeftPadding clearRightPadding" style="padding: 0px 70px 30px 70px; text-align: center; font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 32px; line-height: 36px; font-weight: 700; color: #14375a;">
+								Save on your move, your way!</td></tr><!-- TEXT --><tr>
+							<td class="darkModeTextWhite clearLeftPadding clearRightPadding" style="padding: 0px 70px 30px 70px; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: 24px; font-weight: 400; color: #565151;">
+								Whether you need to move a few things or a whole house, Union Plus can help you save on the right-sized transportation for your moving needs.</td></tr><!-- 3 COL --><tr>
+							<td style="padding: 0px 0px 30px 0px;">
+								<!--[if mso]>                                                     <table width="100%" border="0" cellspacing="0" cellpadding="0">                                                     <tr>                                                     <td valign="top">                                                 <![endif]--><!-- COL --><table align="left" border="0" cellpadding="0" cellspacing="0" class="centerBlock block width160" role="presentation" style="width: 190px;" valign="top" width="190">
+									
+										<tr>
+											<td class="paddingBottom30" style="padding: 0px 30px 0px 0px;">
+												<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+													<!-- IMAGE -->
+														<tr>
+															<td class="darkModeBackgroundBlack" style="border-top: 5px solid #78cdd1; background: #ffffff;">
+																<a   data-linkto="https://" href="http://click.email-unionplus.org/?qs=aa35c04c386e5014baa6aeb5409202a51e8e7933d512abc7173e80941ef23de246f4dfd25abc9397e8c05d9a9ca1a26058ec846390186dc3" target="_blank" title="Save up to 25% on Hertz Vans"><img alt="Save up to 25% on Hertz Vans" data-assetid="839001" height="114" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/6/6e5ce59e-3c56-491e-a04a-08a6e3e5bbdb.jpg" style="display: block; width: 160px; height: 114px; padding: 0px; text-align: center;" width="160"></a></td></tr><!-- TEXT --><tr>
+															<td class="darkModeBackgroundBlack" style=" background: #ffffff; padding: 15px;">
+																<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+																	<!-- TEXT -->
+																		<tr>
+																			<td class="darkModeTextWhite" style="padding: 0px 0px 15px 0px; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px; font-weight: 400; color: #565151;">
+																				Save up to<br>
+																				25% on Hertz Vans*</td></tr><!-- CTA --><tr>
+																			<td class="darkModeTextWhite" style=" text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px; font-weight: 700; color: #397e89;">
+																				<a  class="darkModeTextWhite" href="http://click.email-unionplus.org/?qs=aa35c04c386e5014baa6aeb5409202a51e8e7933d512abc7173e80941ef23de246f4dfd25abc9397e8c05d9a9ca1a26058ec846390186dc3" style="color: #397e89; text-decoration: none;" target="_blank">GET THIS OFFER</a></td></tr></table></td></tr></table></td></tr></table><!--[if mso]>                                                     </td>                                                     <td valign="top">                                                 <![endif]--><!-- COL --><table align="left" border="0" cellpadding="0" cellspacing="0" class="centerBlock block width160" role="presentation" style="width: 190px;" valign="top" width="190">
+									
+										<tr>
+											<td class="paddingBottom30" style="padding: 0px 30px 0px 0px;">
+												<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+													<!-- IMAGE -->
+														<tr>
+															<td class="darkModeBackgroundBlack" style="border-top: 5px solid #78cdd1; background: #ffffff;">
+																<a   data-linkto="https://" href="http://click.email-unionplus.org/?qs=aa35c04c386e50140c8173e1e2346e8e99fbffdd9c56720063391f1c7dd796e93b028a407d8236712dc92a8361bb2410ec5459a902ec205a" target="_blank" title="Save 20% on Budget Trucks"><img alt="Save 20% on Budget Trucks" data-assetid="839002" height="114" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/6/a46e6d61-7663-4413-a757-43c9c4029932.jpg" style="display: block; width: 160px; height: 114px; padding: 0px; text-align: center;" width="160"></a></td></tr><!-- TEXT --><tr>
+															<td class="darkModeBackgroundBlack" style=" background: #ffffff; padding: 15px;">
+																<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+																	<!-- TEXT -->
+																		<tr>
+																			<td class="darkModeTextWhite" style="padding: 0px 0px 15px 0px; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px; font-weight: 400; color: #565151;">
+																				Save 20%<br>
+																				on Budget Trucks*</td></tr><!-- CTA --><tr>
+																			<td class="darkModeTextWhite" style=" text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px; font-weight: 700; color: #397e89;">
+																				<a  class="darkModeTextWhite"  data-linkto="https://" href="http://click.email-unionplus.org/?qs=aa35c04c386e5014fb72cb054627f73e3487324d3fea6683cd50cf7772fa6d22922b5b38fa874a34841548d681f3f6bfb585e9849067c88e" style="color:#397e89;text-decoration:none;" target="_blank" title="Save 20% on Budget Trucks">GET THIS OFFER</a></td></tr></table></td></tr></table></td></tr></table><!--[if mso]>                                                     </td>                                                     <td valign="top">                                                 <![endif]--><!-- COL --><table align="left" border="0" cellpadding="0" cellspacing="0" class="centerBlock block" role="presentation" style="width: 160px;" valign="top" width="160">
+									
+										<tr>
+											<td>
+												<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+													<!-- IMAGE -->
+														<tr>
+															<td class="darkModeBackgroundBlack" style="border-top: 5px solid #78cdd1; background: #ffffff;">
+																<a   data-linkto="https://" href="http://click.email-unionplus.org/?qs=aa35c04c386e5014662d6e2c26918362e34ff3054cc457a02e959678993fa4226e2ee3c0dd85fc9237308a6e0c69b916b0614547d0c68499" target="_blank" title=""><img alt="Save on instate or long distance moves" data-assetid="839004" height="114" src="http://image.email-unionplus.org/lib/fe8d13727562037476/m/6/bdc91f54-64dd-4d0a-a0a4-d8350257566b.jpg" style="display: block; width: 160px; height: 114px; padding: 0px;" width="160"></a></td></tr><!-- TEXT --><tr>
+															<td class="darkModeBackgroundBlack" style=" background: #ffffff; padding: 15px;">
+																<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+																	<!-- TEXT -->
+																		<tr>
+																			<td class="darkModeTextWhite" style="padding: 0px 0px 15px 0px; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px; font-weight: 400; color: #565151;">
+																				Save on instate or long-distance moves*</td></tr><!-- CTA --><tr>
+																			<td class="darkModeTextWhite" style=" text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px; font-weight: 700; color: #397e89;">
+																				<a  class="darkModeTextWhite"  data-linkto="https://" href="http://click.email-unionplus.org/?qs=aa35c04c386e501463e710d59e858213d5c8d20162fcae7adb1f97753c47bd4999e518e2eb073a40d864b2e0b6b0ade6213b215c24f24f1f" style="color:#397e89;text-decoration:none;" target="_blank" title="Save on instate or long-distance moves">GET THIS OFFER</a></td></tr></table></td></tr></table></td></tr></table><!--[if mso]>                                                     </td>                                                     </tr>                                                     </table>                                                 <![endif]--></td></tr><!-- CTA --><tr>
+							<td align="center">
+								<table align="center" border="0" cellpadding="0" cellspacing="0" class="widthFull" style="margin: 0px auto;">
+									
+										<tr>
+											<td height="60" style="background: #dd3134; font-family: 'ff-real-headline-pro', 'Helvetica Neue', 'Montserrat',  Arial, sans-serif; text-align: center; font-size: 18px; line-height: 20px; font-weight: 700; height: 60px; border-radius: 60px;">
+												<a   data-linkto="https://" href="http://click.email-unionplus.org/?qs=aa35c04c386e50149a0dcc46f2f064d7cb579eb4d1a1a4b67d19ecfefa5b498fe55c634771015396df77fdded01c582912c7597e2535580b" style="color:#ffffff;text-decoration:none; padding: 20px 25px; border: 1px solid #dd3134; display: block; border-radius: 60px;" target="_blank" title="Save on your next move">Save on your move</a></td></tr></table></td></tr><!-- TEXT --><tr>
+							<td class="darkModeTextWhite clearLeftPadding clearRightPadding" style="padding: 30px 70px 0px 70px; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 10px; line-height: 14px; font-weight: 400; color: #565151;">
+								*Terms apply.</td></tr></table></td></tr></table></td></tr></table>
+
+</td></tr></table>
+    </td>
+   </tr>
+      
+      <!-- BODY MODULE 7 -->
+   <tr>
+    <td>
+     
+    </td>
+   </tr>
+      
+      <!-- BODY MODULE 8 -->
+   <tr>
+    <td>
+     <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"></td></tr></table>
+    </td>
+   </tr>
+      
+      <!-- BODY MODULE 9-->
+   <tr>
+    <td>
+     
+    </td>
+   </tr>
+      
+      <!-- BODY MODULE 10-->
+   <tr>
+    <td>
+     
+    </td>
+   </tr>
+      
+      <!-- BODY MODULE 11-->
+   <tr>
+    <td>
+     
+    </td>
+   </tr>
+      
+      <!-- BODY MODULE 12-->
+   <tr>
+    <td>
+     
+    </td>
+   </tr>
+      
+      <!-- BODY MODULE 13-->
+   <tr>
+    <td>
+     
+    </td>
+   </tr>
+      
+      <!-- BODY MODULE 14-->
+   <tr>
+    <td>
+     
+    </td>
+   </tr>
+      
+      <!-- BODY MODULE 15-->
+   <tr>
+    <td>
+     
+    </td>
+   </tr>
+      
+      <!-- BODY MODULE 16-->
+   <tr>
+    <td>
+     
+    </td>
+   </tr>
+      
+      <!-- BODY MODULE 17-->
+   <tr>
+    <td>
+     
+    </td>
+   </tr>
+      
+      <!-- BODY MODULE 18-->
+   <tr>
+    <td>
+     
+    </td>
+   </tr>
+      
+      <!-- BODY MODULE 19-->
+   <tr>
+    <td>
+     
+    </td>
+   </tr>
+      
+      <!-- BODY MODULE 20-->
+   <tr>
+    <td>
+     
+    </td>
+   </tr>
+        
+            <!-- HIDDEN CANSPAM -->
+            <tr>
+                <td >
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tbody>
+                        <tr>
+                            <td style="display: none; font-size: 0px; line-height: 0px; height: 0px;" height="0">
+                                This email was sent to: <a href="" style="color: #642064; text-decoration: underline;">mrk3kids@yahoo.com</a>
+                                <br /><br />
+                                Union Plus<br />
+                                <a href="" style="color: #000000; text-decoration: none; cursor: default;">1100 First St NE #850
+                                <br />
+                                Washington, DC 20002 US</a>
+                                <br /><br />
+                                <a  href="http://click.email-unionplus.org/subscription_center.aspx?qs=e5c56c2930ef7ca2afcc5ab93fd3b2ac1ddecab246f9d23f5c68bbdf824076e23ae90125ae94e59cbcee32577dda0ede3f6bfdc489892bbd230410c91a633118" target="_blank" style="color: #642064; text-decoration: underline;">Manage Subscriptions</a> | <a  href="http://click.email-unionplus.org/profile_center.aspx?qs=e5c56c2930ef7ca2235ab96d25872ea53145b14c9e1787ed10cc7e7e1cbd825098ca4bffe7df9c8ed89a1189425634422ab1755cd71e9e2b77ec446d945df68b" target="_blank" style="color: #642064; text-decoration: underline;">Update Profile</a> | <a  href="http://click.email-unionplus.org/unsub_center.aspx?qs=e5c56c2930ef7ca2afcc5ab93fd3b2ac1ddecab246f9d23f5c68bbdf824076e2d58307af14abd32b2733c13ee4fe4209d99352ee17ef89190163bb33d8846678e694c967c564ee90" target="_blank" style="color: #642064; text-decoration: underline;">Unsubscribe</a>
+                                <br /><br />
+                                &copy; 2021 Union Plus
+                              </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                </td>
+            </tr>
+   
+    </table>
+    </td>
+  </tr>
+</table>
+<!-- END OF FIXED WIDTH WRAPPER TABLE -->
+</td>
+</tr>
+</table>
+<!-- END OF 100% WIDTH WRAPPER BACKGROUND TABLE -->
+<!-- EXACT TARGET TRACKING CODE -->
+<img src="http://click.email-unionplus.org/open.aspx?ffcb10-fe9311727265067873-fe57137970600c7e7114-fe8d13727562037476-ff63107370-fe651074746604797d17-ffce15&d=70164&bmt=0" width="1" height="1" alt="">
+</body>
+</html>
+
+--mM4oiGTEMXsH=_?:--
+
